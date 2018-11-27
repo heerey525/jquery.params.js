@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text">
+	<button>点击此处跳转传值</button>
+<script src="jquery-3.3.1.min.js"></script>
+<script src="jquery.params.js"></script>
+<script>
+    $("button").click(function(){
+    	var num=$("input").val();
+    	window.location.href= "jump.html?num="+num;
+    })
+</script>
+</body>
+</html>
